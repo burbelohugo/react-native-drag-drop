@@ -1,11 +1,20 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import Gestures from 'react-native-easy-gestures';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
+      <Gestures>
+<Image
+  source={require("./assets/p.jpg")}
+  style={{
+    width: 200,
+    height: 300,
+  }}
+/>
+</Gestures>
       </View>
     );
   }
